@@ -1,0 +1,53 @@
+@import "myvars";
+//@import "node_modules/compass-mixins/lib/compass";
+
+
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  //@include opacity(0.5);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+　
+.app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: $g-green;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.alert-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  .alert-box-inner {
+    position: relative;
+    margin-left: -50%;
+    -webkit-transform: translate(0, -50%);
+    color: $g-white;
+
+    span {
+      padding: 5px;
+      background: $g-green;
+      color: $g-white;
+      //@include border-radius(5px);
+    }
+  }
+}
+
+
+
